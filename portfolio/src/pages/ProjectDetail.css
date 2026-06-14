@@ -1,0 +1,117 @@
+.project-detail {
+  padding: 48px 32px 100px;
+}
+
+.project-detail--404 {
+  text-align: center;
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.project-detail__inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.project-detail__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  margin-bottom: 40px;
+  transition: color 0.2s;
+}
+
+.project-detail__back:hover {
+  color: var(--text-strong);
+}
+
+.project-detail__banner {
+  height: 300px;
+  border-radius: var(--radius-md);
+  margin-bottom: 40px;
+  border: 1.5px solid var(--border);
+}
+
+.project-detail__meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.project-detail__category {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.project-detail__date {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.project-detail__not-found-title {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+.project-detail__title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-weight: 300;
+  letter-spacing: -0.03em;
+  margin-bottom: 24px;
+}
+
+.project-detail__description {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: var(--text);
+  margin-bottom: 32px;
+}
+
+.project-detail__tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 56px;
+}
+
+.project-detail__tag {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-card);
+  border: 1.5px solid var(--border);
+  color: var(--text);
+}
+
+.project-detail__placeholder {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  font-style: italic;
+  padding: 28px;
+  border: 1.5px dashed var(--border);
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .project-detail {
+    padding: 32px 20px 72px;
+  }
+
+  .project-detail__banner {
+    height: 200px;
+  }
+}
