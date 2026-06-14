@@ -50,7 +50,7 @@ export default function Home() {
                 className="hero__social-link hero__social-link--primary"
               >
                 <ResumeIcon />
-                Resume
+                CV
               </a>
             </div>
           </div>
