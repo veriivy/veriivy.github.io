@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import heroImg from '../assets/hero.png'
+import heroImg from '../assets/heroImg.jpg'
 import ProjectCard from '../components/ProjectCard'
 import FilterBar from '../components/FilterBar'
 import { projects, CATEGORIES } from '../data/projects'
@@ -20,10 +20,9 @@ export default function Home() {
           <div className="hero__text">
             <p className="hero__greeting">Hi, I'm</p>
             <h1 className="hero__name">Audrey Zheng.</h1>
+            <p className="hero__subtitle">B.S. Electrical & Computer Engineering · Carnegie Mellon University</p>
             <p className="hero__bio">
-              I'm a researcher and developer working at the intersection of
-              machine learning and creativity. I love building things that are
-              both rigorous and beautiful.
+              I build intelligent systems at the intersection of AI, computer vision, and robotics. My goal is to bridge cutting-edge research and meaningful real-world applications. 
             </p>
             <div className="hero__links">
               <a
@@ -62,6 +61,12 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <div className="marquee-banner" aria-hidden="true">
+        <div className="marquee-track">
+          {'projects ✦ work ✦ research ✦ creative ✦ '.repeat(8)}
+        </div>
+      </div>
 
       <section className="projects" id="projects">
         <div className="projects__inner">

@@ -8,11 +8,11 @@ const categoryMeta = {
 }
 
 export default function ProjectCard({ project }) {
-  const { slug, title, category, description, image, gradient, tags } = project
+  const { slug, title, category, description, image, gradient, tags, externalUrl } = project
   const colors = categoryMeta[category] ?? categoryMeta.technical
 
-  return (
-    <Link to={`/project/${slug}`} className="project-card">
+  const cardBody = (
+    <>
       <div
         className="project-card__image"
         style={{ background: image ? undefined : gradient }}
@@ -38,10 +38,29 @@ export default function ProjectCard({ project }) {
             ))}
           </div>
           <span className="project-card__arrow" aria-hidden="true">
-            →
+            {externalUrl ? '↗' : '→'}
           </span>
         </div>
       </div>
+    </>
+  )
+
+  if (externalUrl) {
+    return (
+      <a
+        href={externalUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="project-card"
+      >
+        {cardBody}
+      </a>
+    )
+  }
+
+  return (
+    <Link to={`/project/${slug}`} className="project-card">
+      {cardBody}
     </Link>
   )
 }
