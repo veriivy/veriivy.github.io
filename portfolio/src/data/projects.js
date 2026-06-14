@@ -7,7 +7,7 @@ export const projects = [
     category: 'research',
     description:
       'Fine-tuning transformer models for cross-lingual sentiment classification on low-resource languages using limited labeled data.',
-    image: "project2.png",
+    image: "/project2.png",
     gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
     tags: ['Computer Vision', 'CLIP', 'DinoV2','Diffusion Models', 'Python'],
     date: '2025',
@@ -63,7 +63,7 @@ export const projects = [
     category: 'creative',
     description:
       'A scalable API gateway with rate limiting, JWT authentication, and distributed tracing built on Go microservices.',
-    image: "chaosTheory.png",
+    image: "/chaosTheory.png",
     gradient: 'linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%)',
     tags: ['Video Editing', 'Manim', 'Python'],
     date: '2024',
